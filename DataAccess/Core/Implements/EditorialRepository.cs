@@ -18,14 +18,14 @@ namespace DataAccess.Core.Implements
     {
         #region Propierties
         private readonly DbCrudContext context;
-        private readonly ILogger<EditorialRepository> _logger;
+        //private readonly ILogger<EditorialRepository> _logger;
         #endregion
 
         #region Contructor
-        public EditorialRepository(DbCrudContext context, ILogger<EditorialRepository> logger)
+        public EditorialRepository(DbCrudContext context /*ILogger<EditorialRepository> logger*/)
         {
             this.context = context;
-            this._logger = logger;
+            //this._logger = logger;
         }
         #endregion
 

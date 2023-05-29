@@ -51,12 +51,12 @@ namespace TravelLibrary.Controllers
                 };
             }
         }
-        
+
         /// <summary>
-        /// obtener autores has libro by id
+        /// obtener autores has AutorHL by id
         /// </summary>
         /// <returns>Response studentdto</returns>
-        
+
         [HttpGet]
         [Route("GetById")]
         [ProducesResponseType(typeof(Response<AutorHasLibroDto>), StatusCodes.Status200OK)]
@@ -80,11 +80,11 @@ namespace TravelLibrary.Controllers
 
 
         /// <summary>
-        /// crear estudiantes
+        /// crear AutorHL
         /// </summary>
         /// <returns>Response bool</returns>
-        
-        
+
+
         [HttpPost]
         [Route("Create")]
         [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]
@@ -106,12 +106,12 @@ namespace TravelLibrary.Controllers
             }
         }
 
-        
+
         /// <summary>
-        /// actualizar estudiantes
+        /// actualizar AutorHL
         /// </summary>
         /// <returns>Response bool</returns>
-        
+
         [HttpPut]
         [Route("Update")]
         [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]
@@ -133,13 +133,13 @@ namespace TravelLibrary.Controllers
             }
         }
 
-        
+
 
         /// <summary>
-        /// eliminar by id
+        /// eliminar AutorHL by id
         /// </summary>
         /// <returns>Response bool</returns>
-        
+
         [HttpDelete]
         [Route("Delete")]
         [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]
@@ -160,10 +160,5 @@ namespace TravelLibrary.Controllers
                 };
             }
         }
-
-
-
-
-        /* */
     }
 }

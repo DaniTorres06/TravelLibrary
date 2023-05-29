@@ -77,9 +77,7 @@ namespace TravelLibrary.Controllers
                     Message = MessageExtension.AddMessageList(ex.Message)
                 };
             }
-        }
-
-        
+        }        
          
         /// <summary>
         /// crear editorial
@@ -106,7 +104,6 @@ namespace TravelLibrary.Controllers
             }
         }
 
-
         /// <summary>
         /// actualizar editorial
         /// </summary>
@@ -131,7 +128,6 @@ namespace TravelLibrary.Controllers
                 };
             }
         }
-
 
         /// <summary>
         /// eliminar by id
@@ -158,64 +154,6 @@ namespace TravelLibrary.Controllers
             }
         }
 
-
-
-        /*
-
-        /// <summary>
-        /// actualizar estudiantes
-        /// </summary>
-        /// <returns>Response bool</returns>
         
-        [HttpPut]
-        [Route("Update")]
-        [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]
-        public async Task<Response<bool>> Update(AutorDto student)
-        {
-            Response<bool> response;
-            try
-            {
-                response = await Service.UpdateAutor(student);
-                return response;
-            }
-            catch (Exception ex)
-            {
-                return new Response<bool>
-                {
-                    Status = false,
-                    Message = MessageExtension.AddMessageList(ex.Message)
-                };
-            }
-        }
-        
-
-        /// <summary>
-        /// eliminar by id
-        /// </summary>
-        /// <returns>Response bool</returns>
-        
-        [HttpDelete]
-        [Route("Delete")]
-        [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]
-        public async Task<Response<bool>> DeleteById(int id)
-        {
-            Response<bool> response;
-            try
-            {
-                response = await Service.DeleteByIdAutor(id);
-                return response;
-            }
-            catch (Exception ex)
-            {
-                return new Response<bool>
-                {
-                    Status = false,
-                    Message = MessageExtension.AddMessageList(ex.Message)
-                };
-            }
-        }
-
-
-        */
     }
 }

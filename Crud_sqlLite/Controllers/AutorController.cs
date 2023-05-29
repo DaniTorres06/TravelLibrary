@@ -18,19 +18,19 @@ namespace TravelLibrary.Controllers
     {
         #region Propierties
         private readonly IAutorServices Service;
-        private readonly ILogger<AutorController> _logger;
+        //private readonly ILogger<AutorController> _logger;
         #endregion
 
         #region Constructor
-        public AutorController(IAutorServices service, ILogger<AutorController> logger)
+        public AutorController(IAutorServices service )
         {
             Service = service;
-            _logger = logger;
+            //_logger = logger;
         }
         #endregion
 
         /// <summary>
-        /// Obtener estudiantes
+        /// Obtener Autor
         /// </summary>
         /// <returns>Response model StudentDto</returns>        
         [HttpGet]
@@ -55,10 +55,9 @@ namespace TravelLibrary.Controllers
         }
 
         /// <summary>
-        /// obtener estudiantes by id
+        /// obtener Autor by id
         /// </summary>
         /// <returns>Response studentdto</returns>
-        
         [HttpGet]
         [Route("GetById")]
         [ProducesResponseType(typeof(Response<AutorDto>), StatusCodes.Status200OK)]
@@ -82,11 +81,9 @@ namespace TravelLibrary.Controllers
 
 
         /// <summary>
-        /// crear estudiantes
+        /// crear Autor
         /// </summary>
         /// <returns>Response bool</returns>
-        
-        
         [HttpPost]
         [Route("Create")]
         [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]
@@ -107,13 +104,12 @@ namespace TravelLibrary.Controllers
                 };
             }
         }
-        
+
 
         /// <summary>
-        /// actualizar estudiantes
+        /// actualizar Autor
         /// </summary>
         /// <returns>Response bool</returns>
-        
         [HttpPut]
         [Route("Update")]
         [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]
@@ -134,13 +130,12 @@ namespace TravelLibrary.Controllers
                 };
             }
         }
-        
+
 
         /// <summary>
-        /// eliminar by id
+        /// eliminar Autor by id
         /// </summary>
         /// <returns>Response bool</returns>
-        
         [HttpDelete]
         [Route("Delete")]
         [ProducesResponseType(typeof(Response<bool>), StatusCodes.Status200OK)]

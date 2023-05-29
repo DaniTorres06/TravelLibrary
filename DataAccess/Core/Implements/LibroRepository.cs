@@ -22,10 +22,10 @@ namespace DataAccess.Core.Implements
         #endregion
 
         #region Contructor
-        public LibroRepository(DbCrudContext context, ILogger<LibroRepository> logger)
+        public LibroRepository(DbCrudContext context)
         {
             this.context = context;
-            this._logger = logger;
+            //this._logger = logger;
         }
         #endregion
 

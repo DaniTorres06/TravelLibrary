@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DependencyInjection", "Depe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{AB0495F8-D933-49C9-80BC-6E0CB953BF31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TravelTest", "TravelTest\TravelTest.csproj", "{9059A12D-7DBC-406A-BD2C-945069267EC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{AB0495F8-D933-49C9-80BC-6E0CB953BF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB0495F8-D933-49C9-80BC-6E0CB953BF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB0495F8-D933-49C9-80BC-6E0CB953BF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9059A12D-7DBC-406A-BD2C-945069267EC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9059A12D-7DBC-406A-BD2C-945069267EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9059A12D-7DBC-406A-BD2C-945069267EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9059A12D-7DBC-406A-BD2C-945069267EC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
